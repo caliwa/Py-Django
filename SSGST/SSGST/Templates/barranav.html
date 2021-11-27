@@ -1,0 +1,25 @@
+{% load static %}
+<link href="{% static '/styles/styles.css' %}" rel="stylesheet">
+<div id="navegador">
+    <table class="center">
+        <tr>
+            <td><a href="{% url 'Emergency' %}">Add Contacto Emerg.</a></td>
+            <td><a href="{% url 'Seg_Social' %}">Add Seguridad Social</a></td>
+            <td><a href="/admin/">Configuración Empresa</a></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td><a href="/admin/">Registro Proveedores</a></td>
+            <td><a href="/admin/">Elementos de Protección Personal</a></td>
+            <td><a href="/admin/">Documentación Empresa</a></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td></td>
+            <td><a href="/admin/">Documentación Empleados</a></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+
+<style>li {    display: inline-block;  padding: 15px; font-size: 13px;} a {color:blue;}</style>

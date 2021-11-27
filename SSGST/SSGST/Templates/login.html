@@ -1,0 +1,29 @@
+{% load static %}
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="{% static '/styles/styles.css' %}" rel="stylesheet">
+    
+  </head>
+  <body>
+    <div class="inicio">
+      <h1>LOGUEO FUNDACIÓN ANCLA - SSGST</h1>
+    </div>
+      
+        <form method="POST"> {%csrf_token%}
+          <div class="login">
+            <div class="boton">
+              {{X.as_table}}
+            </div>
+          <input class="boton color" type="submit" value="Validar"> </form>
+      </div>
+      </div>
+
+     
+  </body>
+</html>

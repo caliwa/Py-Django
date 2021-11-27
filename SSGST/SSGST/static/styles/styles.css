@@ -1,0 +1,126 @@
+/* Globales */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;  
+    scroll-snap-type: y mandatory;
+    background-color: #0080FF !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html{
+    background-color: red;
+}
+
+.inicio {
+    background-color: aqua;
+    padding-bottom: 0rem;
+    padding: 20rem;
+    margin: 10rem; 
+    width: 90%;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+}
+
+.inicio2 {
+    background-color: aqua;
+    padding-bottom: 0rem;
+    padding: 4rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    width: 90%;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+}
+
+.login {
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    gap: 2rem;
+}
+
+h1{
+    font-size: 70px; 
+    font-weight: 400;
+    display: flex; 
+    justify-content:center; 
+    color: red;
+}
+
+div{
+    display: flex; 
+    justify-content:center;
+}
+
+a, .boton{
+    display: block;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+}
+
+a, .boton:hover {
+    cursor: pointer;
+}
+
+.color {
+    background-color: red;
+}
+
+.color2 {
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-color: aqua;
+    padding-bottom: 2rem;
+    margin-top: 15%;
+    box-shadow: 5px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 3%;
+}
+
+.letras-default {
+    font-size: 2rem; 
+    font-weight: normal;
+    text-decoration: none;
+    border: none;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
+    text-align: left;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(odd) {
+    background: yellow;
+}
+
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+.center{
+    margin-top: 5rem;
+}

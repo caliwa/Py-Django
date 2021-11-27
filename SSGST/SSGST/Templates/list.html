@@ -1,0 +1,49 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>SSGST</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="{% static '/styles/styles.css' %}" rel="stylesheet">
+  </head>
+  <body>
+    <h1>GESTIÓN EMPLEADOS ANCLA</h1>
+    <div class="grid letras-default">
+      
+      {%include 'barranav.html'%}
+      
+      <table>
+          <tr class="color2">
+              <td>Nombre</td>
+              <td>Apellido</td>
+              <td>Cargo</td>
+              <td>Celular</td>
+              <td>Borrar</td>
+              <td>Actualizar</td>
+          </tr>
+          {% for i in model %}
+              <tr>
+                  <td>{{i.nombres}}</td>
+                  <td>{{i.apellidos}}</td>
+                  <td>{{i.cargo}}</td>
+                  <td>{{i.celular}}</td>
+                  <div class="grid1">
+                    <td><a href="{% url 'Delete' i.id %}">O</a></td>
+                    <td><a href="{% url 'Update' i.id %}">O</a></td>
+                  </div>
+              </tr>
+          {% endfor %}
+      </table>
+      <br>
+      <br>
+      <div class="boton">
+        <a href="{% url 'Empleado' %}">Crear</a>
+        <a href="{% url 'Logout_view' %}">Desloguear</a>
+      </div>
+    </div>
+    
+  </body>
+  
+</html>

@@ -1,0 +1,16 @@
+{% load static %}
+<head>
+    <title>Registro</title>
+    <link href="{% static '/styles/styles.css' %}" rel="stylesheet">
+</head>
+
+<h1>Registro de: {{model}}</h1>
+
+<div class="inicio2 letras-default">
+    <form method="POST">{% csrf_token %}
+        {{form.as_p}}
+        <input class="boton color" type="submit" value="guardar">
+    </form>
+</div>
+
+<a href="{% url 'Listar' %}">Volver</a>
